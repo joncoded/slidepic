@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Armata&family=Open+Sans:wght@300;400&display=swap");
+
+:root {
+  --bg-body: #fff;
+  --cl-body: #000;
+  --br-controls: #999;
+}
+
+body,
+input,
+button {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+body {
+  background: var(--bg-body);
+  color: var(--cl-body);
+}
+
+.slidepic {
+  min-width: 320px;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.slidepic-title {
+  font-family: "Armata", sans-serif;
+  font-size: 1.25rem;
+}
+
+.slidepic-controls {
+  border: 1px dashed var(--br-controls);
+}
+
+.slidepic-controls button {
+  margin: 0 5px;
+  padding: 5px 10px;
+}
+
+.slidepic-image {
+  margin: 15px 0;
+}
+
+.slidepic-image img {
+  max-height: 400px;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+/* accessibility */
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
